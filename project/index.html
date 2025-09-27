@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OmniBiz</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>OmniBiz</h1>
+  <section class="search-sort">
+    <input type="text" id="searchInput" placeholder="Search products..." />
+    <select id="sortSelect">
+      <option value="default">Sort by</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+    </select>
+  </section>
+  <section class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="electronics">Electronics</button>
+    <button data-filter="clothing">Clothing</button>
+    <button data-filter="books">Books</button>
+    <button data-filter="home">Home</button>
+    <button data-filter="accessories">Accessories</button>
+  </section>
+</header>
+
+<main>
+  <section class="gallery" id="gallery"></section>
+</main>
+
+<div class="modal" id="modal">
+  <div class="modal-content" id="modal-content">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <img id="modal-image" src="" alt="Product Image" />
+    <h2 id="modal-name"></h2>
+    <p id="modal-price"></p>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
